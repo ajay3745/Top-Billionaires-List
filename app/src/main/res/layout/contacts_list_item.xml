@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parent"
+    app:cardElevation="@dimen/cardview_compat_inset_shadow"
+    app:cardCornerRadius="10dp"
+    app:rippleColor="#FF0000"
+    android:padding="15dp"
+    android:hapticFeedbackEnabled="true"
+    android:layout_marginTop="15dp"
+    android:layout_margin="20dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:id="@+id/image"
+            android:src="@mipmap/ic_launcher"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:fontFamily="serif"
+            android:text="Contact Name"
+            android:textSize="16sp"
+            android:textStyle="italic|bold"
+            android:id="@+id/txtName"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtName"
+            android:text="Email"
+            android:layout_centerHorizontal="true"
+            android:textStyle="italic"
+            android:layout_marginTop="5dp"
+            android:id="@+id/txtEmail"
+            android:layout_marginBottom="8dp"/>
+    </RelativeLayout>
+
+    
+
+
+
+</com.google.android.material.card.MaterialCardView>
